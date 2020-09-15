@@ -34,7 +34,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <ToggleButton
-        android:id="@+id/passwordToggle"
+        android:id="@+id/passwordCreationToggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="No Password"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.956" />
 
     <TextView
-        android:id="@+id/createNameLabal"
+        android:id="@+id/createNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/medScreenTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -40,4 +40,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/medication_change" />
+
+    <TextView
+        android:id="@+id/med1LabelSummaryPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Med #1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <TextView
+        android:id="@+id/med1Dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Med 1 Dose"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/med1StartDate"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/med1LabelSummaryPage"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <TextView
+        android:id="@+id/med1StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Med 1 Start"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="114dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

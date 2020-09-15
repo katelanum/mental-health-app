@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/greatButton"
         android:layout_width="165dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
@@ -30,28 +31,28 @@
         tools:layout_editor_absoluteY="125dp">
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/horridButton"
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:layout_marginEnd="12dp"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/badButton"
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:layout_marginEnd="12dp"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/radioButton9"
+            android:id="@+id/fineButton"
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:layout_marginEnd="12dp"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/goodButton"
             android:layout_width="23dp"
             android:layout_height="23dp"
             android:layout_marginEnd="12dp"
@@ -66,38 +67,38 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/greatLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
         android:text="Great"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/greatButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/horridLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="20dp"
         android:text="Horrid"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/greatButton"
         app:layout_constraintStart_toStartOf="@+id/guideline4" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/fineLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Fine"
         android:textAlignment="textStart"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/greatButton"
+        app:layout_constraintEnd_toStartOf="@+id/greatLabel"
         app:layout_constraintHorizontal_bias="0.435"
-        app:layout_constraintStart_toEndOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/horridLabel" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -105,5 +106,28 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/mainSymptom1Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="Symptom #1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/greatButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/mainSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
