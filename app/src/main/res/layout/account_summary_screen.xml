@@ -21,19 +21,23 @@
         android:id="@+id/accountSummaryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
         android:text="Name"
         android:textAlignment="textStart"
         android:textAllCaps="true"
-        tools:layout_editor_absoluteX="107dp"
+        app:layout_constraintEnd_toStartOf="@+id/accountSummaryUserName"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="110dp" />
 
     <TextView
         android:id="@+id/accountSummaryUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
         android:text="Name(Populated)"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="193dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="110dp" />
 
     <ToggleButton
@@ -53,7 +57,8 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="67dp"
+        app:layout_constraintEnd_toStartOf="@+id/accountSummaryPasswordInput"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="257dp" />
 
     <EditText
@@ -74,6 +79,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="341dp" />
 
