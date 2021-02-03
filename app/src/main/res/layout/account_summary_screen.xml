@@ -21,67 +21,73 @@
         android:id="@+id/accountSummaryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="44dp"
         android:text="Name"
         android:textAlignment="textStart"
         android:textAllCaps="true"
         app:layout_constraintEnd_toStartOf="@+id/accountSummaryUserName"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryTitle" />
 
     <TextView
         android:id="@+id/accountSummaryUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
         android:text="Name(Populated)"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryTitle" />
 
     <ToggleButton
         android:id="@+id/accountSummaryLockUnlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
         android:textAlignment="center"
         android:textOff="Unlocked"
         android:textOn="Locked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="157dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryTitle" />
 
     <TextView
         android:id="@+id/accountSummaryPasswordTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Password"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/accountSummaryPasswordInput"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="257dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryLockUnlock" />
 
     <EditText
         android:id="@+id/accountSummaryPasswordInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryLockUnlock" />
 
     <TextView
         android:id="@+id/accountSummaryConditionsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
         android:text="Conditions"
         android:textAlignment="center"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintTop_toBottomOf="@+id/accountSummaryLockUnlock" />
 
     <Button
         android:id="@+id/accountSummaryAcceptChanges"

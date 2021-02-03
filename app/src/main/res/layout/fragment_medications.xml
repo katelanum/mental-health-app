@@ -34,10 +34,12 @@
                 android:id="@+id/medFragMed1Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="120dp"
                 android:text="Medication 1"
                 android:textAlignment="center"
-                tools:layout_editor_absoluteX="58dp"
-                tools:layout_editor_absoluteY="121dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/medChangeButton"
@@ -65,21 +67,25 @@
                 android:id="@+id/med1Dose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
                 android:text="Med 1 Dose "
                 android:textAlignment="center"
                 app:layout_constraintStart_toEndOf="@+id/medFragMed1Title"
-                tools:layout_editor_absoluteY="121dp" />
+                app:layout_constraintTop_toBottomOf="@+id/medFragmentTitle" />
 
             <TextView
                 android:id="@+id/med1Start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="120dp"
                 android:text="Med 1 Start"
                 android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/med1Dose"
-                tools:layout_editor_absoluteY="121dp" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
