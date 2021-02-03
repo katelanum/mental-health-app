@@ -22,9 +22,11 @@
         android:id="@+id/NameCreationInputLayout"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="143dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/createNameInput"
@@ -37,19 +39,23 @@
         android:id="@+id/passwordCreationToggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:textOff="No Password"
         android:textOn="Password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintTop_toBottomOf="@+id/NameCreationInputLayout" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/createPassword"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="393dp">
+        app:layout_constraintTop_toBottomOf="@+id/passwordCreationToggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/createPasswordInput"

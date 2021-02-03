@@ -23,21 +23,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:layout_marginBottom="72dp"
         android:text="Medication Name"
         android:textAlignment="center"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/medDoseInputLabel"
         app:layout_constraintEnd_toStartOf="@+id/medNameInput"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/medNameInput"
-        android:layout_width="213dp"
-        android:layout_height="37dp"
+        android:layout_width="204dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="122dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -50,18 +54,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
+        android:layout_marginBottom="72dp"
         android:text="Dosage"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintBottom_toTopOf="@+id/startInputLabel"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dosageInput"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/startDateInput"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toEndOf="@+id/medDoseInputLabel"
-        tools:layout_editor_absoluteY="210dp">
+        app:layout_constraintTop_toBottomOf="@+id/medNameInput"
+        app:layout_constraintVertical_bias="1.0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -73,21 +82,23 @@
         android:id="@+id/startInputLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:text="Start Date (Optional)"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/startDateInput"
         android:layout_width="203dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="392dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/startInputLabel"
-        tools:layout_editor_absoluteY="299dp">
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/startInputLabel">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
